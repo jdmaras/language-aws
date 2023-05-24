@@ -9,3 +9,6 @@ This was also a chance for me to create an application and learn how to host it 
  - React.js
  - AWS Amplify
  - AWS Route 53
+
+## Hosted Page
+https://www.ibtranslator.com/
