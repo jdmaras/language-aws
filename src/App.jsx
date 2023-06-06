@@ -11,7 +11,6 @@ function App() {
   }
   function replaceFirstVowels(sentence){
     var vowels = ['a', 'e', 'i', 'o', 'u'];
-    console.log(sentence);
     let words = sentence.toLowerCase().split(' ');
     
     const replaceWords = words.map(word => {
@@ -38,7 +37,7 @@ function App() {
                 value={data} onChange={(e) => setData(e.target.value)} />
               <div>
                 <button className="rounded-md bg-zinc-950 p-4 m-2" 
-                  onClick={() => {setPrint(false); setData('');}}>Clear</button>
+                  onClick={(event) => {event.preventDefault(); setPrint(false); setData('');}}>Clear</button>
                 <input className="rounded-md bg-zinc-950 p-4 m-2" 
                   type="submit" 
                   onClick={(event) => {event.preventDefault(); 
